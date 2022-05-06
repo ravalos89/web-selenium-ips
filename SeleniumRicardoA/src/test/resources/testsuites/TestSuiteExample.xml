@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="IPS Test Suite" parallel="tests" thread-count="2">
+
+	<test name="GoogleTest">
+		<classes>
+			<class name="com.google.GoogleTest" />
+		</classes>
+	</test>
+	
+	<test name="FacebookTest">
+		<classes>
+			<class name="com.google.FacebookTest" />
+		</classes>
+	</test>
+	
+	<test name="FacebookPOMTest">
+		<classes>
+			<class name="com.facebook.FacebookLoginTest" />
+		</classes>
+	</test>
+
+</suite>

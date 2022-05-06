@@ -17,10 +17,13 @@ public class FacebookLoginPage extends Base{
 	By btnLogin = By.xpath("//button[@name='login']");
 	
 	// Customize methods
-	public void loginFacebook(String email, String pwd) {
+	public void loginFacebook(String email, String pwd) throws InterruptedException {
+		waitForElementPresent(btnLogin);
 		type(txtEmail, email);
 		type(txtPwd, pwd);
 		click(btnLogin);
+//		Thread.sleep(6000);
+		takeScreenshot("AfterLogin");
 	}
 
 }
